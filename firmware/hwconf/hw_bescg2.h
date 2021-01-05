@@ -74,8 +74,9 @@
 #ifndef VIN_R2
 #define VIN_R2					3240.0
 #endif
+#define INVERTED_SHUNT_POLARITY
 #ifndef CURRENT_AMP_GAIN
-#define CURRENT_AMP_GAIN		-20.0
+#define CURRENT_AMP_GAIN		20.0
 #endif
 #ifndef CURRENT_SHUNT_RES
 #define CURRENT_SHUNT_RES		0.0002
