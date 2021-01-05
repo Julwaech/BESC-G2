@@ -8,6 +8,7 @@
 
 // HW properties
 #define HW_HAS_3_SHUNTS
+#define HW_HAS_SIN_COS_ENCODER
 
 // Macros
 
@@ -92,6 +93,10 @@
 
 // Voltage on ADC channel
 #define ADC_VOLTS(ch)			((float)ADC_Value[ch] / 4096.0 * V_REG)
+
+// Sin/Cos Encoder signals
+#define ENCODER_SIN_VOLTS				ADC_VOLTS(ADC_IND_EXT)
+#define ENCODER_COS_VOLTS				ADC_VOLTS(ADC_IND_EXT2)
 
 // Double samples in beginning and end for positive current measurement.
 // Useful when the shunt sense traces have noise that causes offset.
